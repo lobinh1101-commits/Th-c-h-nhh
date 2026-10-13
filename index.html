@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Định kiểu bảng trong HTML</title>
+    <title>Trang Web Cá Nhân</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="hero">
+        <p class="eyebrow">HỒ SƠ CÁ NHÂN</p>
+        <h1>Chào mừng đến với trang web cá nhân của tôi</h1>
+        <p class="hero-subtitle">Học hỏi mỗi ngày, tạo nên những điều hữu ích.</p>
+    </header>
+
     <main>
-        <header class="page-header">
-            <p class="eyebrow">THỰC HÀNH HTML &amp; CSS</p>
-            <h1>Định kiểu bảng</h1>
-            <p>Thử nghiệm đường viền, kích thước, căn chỉnh, khoảng cách và màu sắc.</p>
-        </header>
+        <section class="card profile">
+            <img src="avatar.svg" alt="Ảnh đại diện minh họa" class="avatar">
+            <div class="profile-copy">
+                <p class="eyebrow">XIN CHÀO, MÌNH LÀ</p>
+                <h2>Nguyễn Văn A</h2>
+                <p>Một người yêu thích công nghệ và đang trên hành trình trở thành lập trình viên. Mình thích biến những ý tưởng thành các sản phẩm đơn giản, hữu ích.</p>
+            </div>
+        </section>
 
-        <section class="lesson-card">
-            <h2>Đường viền rời</h2>
-            <p>Mỗi ô có viền riêng; khoảng cách giữa các viền giúp thấy rõ chế độ mặc định.</p>
+        <div class="content-grid">
+            <section class="card hobbies">
+                <h2>Sở thích</h2>
+                <ul>
+                    <li>Đọc sách và khám phá kiến thức mới</li>
+                    <li>Chơi thể thao</li>
+                    <li>Lập trình và thử nghiệm ý tưởng</li>
+                    <li>Du lịch, khám phá những nơi mới</li>
+                </ul>
+            </section>
+
+            <section class="card goals">
+                <h2>Mục tiêu học tập</h2>
+                <p>Mình muốn nắm vững HTML, CSS và JavaScript, sau đó trở thành một lập trình viên chuyên nghiệp có thể xây dựng những sản phẩm hữu ích cho mọi người.</p>
+            </section>
+        </div>
+
+        <footer class="card contact">
+            <h2>Thông tin liên hệ</h2>
             <div class="table-scroll">
-                <table class="separate-table">
-                    <thead>
-                        <tr>
-                            <th>Họ tên</th>
-                            <th>Tuổi</th>
-                            <th>Lớp</th>
-                        </tr>
-                    </thead>
+                <table>
                     <tbody>
                         <tr>
-                            <td>Nguyễn Văn A</td>
-                            <td>20</td>
-                            <td>Web</td>
+                            <th scope="row">Email</th>
+                            <td><a href="mailto:nguyenvana@example.com">nguyenvana@example.com</a></td>
                         </tr>
                         <tr>
-                            <td>Trần Thị B</td>
-                            <td>21</td>
-                            <td>Web</td>
+                            <th scope="row">Facebook</th>
+                            <td><a href="https://www.facebook.com/nguyenvana">facebook.com/nguyenvana</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </section>
-
-        <section class="lesson-card">
-            <h2>Đường viền gộp và các kiểu trình bày</h2>
-            <p>Bảng rộng 100%; viền được gộp, tiêu đề cao 50px, ô dữ liệu cao 80px và căn nội dung xuống dưới.</p>
-            <div class="table-scroll">
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Họ tên</th>
-                            <th>Tuổi</th>
-                            <th>Lớp</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Nguyễn Văn A</td>
-                            <td>20</td>
-                            <td>Web</td>
-                        </tr>
-                        <tr>
-                            <td>Trần Thị B</td>
-                            <td>21</td>
-                            <td>Web</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        </footer>
     </main>
 </body>
 </html>
