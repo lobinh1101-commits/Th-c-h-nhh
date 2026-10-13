@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên kết yêu thích</title>
+    <title>Bài viết của tôi</title>
     <style>
         body {
             margin: 0;
@@ -19,36 +19,43 @@
             margin: 0 0 20px;
             font-size: 42px;
             font-weight: 700;
+            color: #1f1f1f;
+            background-color: #fff;
+            display: inline-block;
         }
 
-        ul {
-            margin: 0;
-            padding-left: 52px;
+        p {
+            margin: 0 0 18px;
+            font-size: 30px;
+            line-height: 1.6;
         }
 
-        li {
-            margin: 18px 0;
+        .red {
+            color: #d32f2f;
+            font-weight: bold;
         }
 
-        a {
-            color: #1d4ed8;
-            text-decoration: none;
+        .italic {
+            font-style: italic;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .center {
+            text-align: center;
+        }
+
+        .big {
+            font-size: 32px;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
-    <h1>Liên kết yêu thích của tôi</h1>
+    <h1>Bài viết của tôi</h1>
 
-    <ul>
-        <li><a href="https://www.google.com" target="_blank">Google</a></li>
-        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="about.html">Về tôi</a></li>
-        <li><a href="mailto:yourname@gmail.com">Gửi email cho tôi</a></li>
-    </ul>
+    <p><span class="red">Đây là đoạn văn</span> được định dạng màu sắc.</p>
+
+    <p class="italic">Tôi đang học HTML Styles.</p>
+
+    <p class="center big">Định dạng văn bản giúp trang web đẹp hơn.</p>
 </body>
 </html>
