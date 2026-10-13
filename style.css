@@ -1,85 +1,86 @@
 
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+h1 {
+    text-align: center;
+    color: #245b8f;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas:
-        "header header"
-        "navigation navigation"
-        "main sidebar"
-        "footer footer";
+    display: flex;
     gap: 10px;
     padding: 10px;
-}
-
-.header {
-    grid-area: header;
-    background-color: #2196f3;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.navigation {
-    grid-area: navigation;
-    background-color: #333;
-    padding: 15px;
-    display: flex;
-    gap: 20px;
-}
-
-.navigation a {
-    color: white;
-    text-decoration: none;
-}
-
-.navigation a:hover {
-    color: #ffcc00;
-}
-
-.main-content {
-    grid-area: main;
     background-color: white;
-    padding: 20px;
-    min-height: 250px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: #ddd;
+.item {
+    flex-basis: 100px;
     padding: 20px;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 15px;
+    background-color: lightblue;
+    border: 1px solid #7ba8c8;
+}
+
+/* Ví dụ 1 */
+.example1 .item2 {
+    flex-grow: 1;
+    background-color: lightcoral;
+}
+
+/* Ví dụ 2 */
+.example2 .item1 {
+    flex-grow: 1;
+    background-color: lightgreen;
+}
+
+.example2 .item2 {
+    flex-grow: 2;
+    background-color: lightcoral;
+}
+
+.example2 .item3 {
+    flex-grow: 3;
+    background-color: lightblue;
+}
+
+/* Ví dụ 3 */
+.example3 {
+    flex-grow: 1;
+}
+
+.example3 .item1 {
+    flex-grow: initial;
+}
+
+.example3 .item2 {
+    flex-grow: inherit;
+}
+
+.example3 .item3 {
+    flex-grow: 1;
 }
 
 @media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "navigation"
-            "main"
-            "sidebar"
-            "footer";
+    body {
+        margin: 10px;
     }
 
-    .navigation {
-        flex-direction: column;
-        gap: 12px;
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        min-width: 0;
     }
 }

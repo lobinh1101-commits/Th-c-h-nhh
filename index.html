@@ -4,45 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành Flex Basis</title>
+    <title>Thực hành Flex Grow</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Thực hành CSS: flex-basis Property</h1>
+    <h1>Thực hành CSS: flex-grow Property</h1>
 
-    <h2>Ví dụ 1: flex-basis với px</h2>
+    <h2>Ví dụ 1: flex-grow trên Item 2</h2>
     <div class="container example1">
-        <div class="item item1">Item 1<br>200px</div>
-        <div class="item item2">Item 2<br>100px</div>
-        <div class="item item3">Item 3<br>150px</div>
+        <div class="item">Item 1</div>
+        <div class="item item2">Item 2<br>flex-grow: 1</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
     </div>
 
-    <h2>Ví dụ 2: flex-direction: column</h2>
+    <h2>Ví dụ 2: So sánh các giá trị flex-grow</h2>
     <div class="container example2">
-        <div class="item">Item 1 - 100px</div>
-        <div class="item">Item 2 - 100px</div>
-        <div class="item">Item 3 - 100px</div>
+        <div class="item item1">Grow: 1</div>
+        <div class="item item2">Grow: 2</div>
+        <div class="item item3">Grow: 3</div>
     </div>
 
-    <h2>Ví dụ 3: flex-basis với %</h2>
+    <h2>Ví dụ 3: flex-grow với initial và inherit</h2>
     <div class="container example3">
-        <div class="item">Item 1 - 50%</div>
-        <div class="item">Item 2 - 50%</div>
+        <div class="item item1">initial</div>
+        <div class="item item2">inherit</div>
+        <div class="item item3">flex-grow: 1</div>
     </div>
-
-    <h2>Ví dụ 4: flex-basis kết hợp flex-grow</h2>
-    <div class="container example4">
-        <div class="item item1">Item 1<br>grow: 1</div>
-        <div class="item item2">Item 2<br>grow: 2</div>
-        <div class="item item3">Item 3<br>grow: 1</div>
-    </div>
-
-    <h2>Ví dụ 5: auto, initial và inherit</h2>
-    <div class="container example5">
-        <div class="item item1">flex-basis: auto</div>
-        <div class="item item2">flex-basis: initial</div>
-        <div class="item item3">flex-basis: inherit</div>
-    </div>
-
 </body>
 </html>
