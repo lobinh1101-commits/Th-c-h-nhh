@@ -3,70 +3,96 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lịch họp công ty</title>
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            border: 1px solid #555;
-            padding: 8px 12px;
-            text-align: left;
-        }
-
-        thead {
-            background-color: #e8eef5;
-        }
-    </style>
+    <title>Thực hành định kiểu danh sách</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lịch họp công ty</h1>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2">Ngày</th>
-                <th colspan="2">Giờ</th>
-                <th rowspan="2">Nội dung cuộc họp</th>
-            </tr>
-            <tr>
-                <th>Bắt đầu</th>
-                <th>Kết thúc</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="3">Thứ Hai, 19/10/2026</td>
-                <td>09:00</td>
-                <td>10:00</td>
-                <td>Họp kế hoạch tuần</td>
-            </tr>
-            <tr>
-                <td>10:00</td>
-                <td>11:00</td>
-                <td>Họp nhóm dự án</td>
-            </tr>
-            <tr>
-                <td colspan="2">14:00 - 16:00 (2 giờ)</td>
-                <td>Đào tạo nội bộ</td>
-            </tr>
-            <tr>
-                <td>Thứ Ba, 20/10/2026</td>
-                <td colspan="2">09:00 - 11:00 (2 giờ)</td>
-                <td>Họp toàn công ty</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Thứ Tư, 21/10/2026</td>
-                <td>09:00</td>
-                <td>10:00</td>
-                <td>Trao đổi với khách hàng</td>
-            </tr>
-            <tr>
-                <td colspan="2">13:00 - 15:00 (2 giờ)</td>
-                <td>Rà soát tiến độ dự án</td>
-            </tr>
-        </tbody>
-    </table>
+    <main>
+        <header class="page-header">
+            <p class="eyebrow">THỰC HÀNH HTML &amp; CSS</p>
+            <h1>Định kiểu danh sách</h1>
+            <p>Khám phá cách thay đổi dấu đầu dòng, vị trí, hình ảnh và màu sắc bằng CSS.</p>
+        </header>
+
+        <section class="lesson-card">
+            <h2>1. Danh sách không thứ tự với dấu vuông</h2>
+            <ul class="square-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section class="lesson-card">
+            <h2>2. Danh sách có thứ tự với số La Mã</h2>
+            <ol class="roman-list">
+                <li>Học HTML</li>
+                <li>Học CSS</li>
+                <li>Học JavaScript</li>
+                <li>Học Git</li>
+            </ol>
+        </section>
+
+        <section class="lesson-card">
+            <h2>3. Hình ảnh làm dấu đánh dấu</h2>
+            <ul class="image-list">
+                <li>Visual Studio Code</li>
+                <li>Google Chrome</li>
+                <li>GitHub</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section class="lesson-card">
+            <h2>4. Vị trí dấu đánh dấu</h2>
+            <div class="position-demo">
+                <div>
+                    <h3>Outside</h3>
+                    <ul class="outside-list">
+                        <li>Mục có nội dung dài để quan sát cách dòng tiếp theo căn theo phần chữ.</li>
+                        <li>Mục thứ hai</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Inside</h3>
+                    <ul class="inside-list">
+                        <li>Mục có nội dung dài để quan sát cách dòng tiếp theo căn theo phần chữ.</li>
+                        <li>Mục thứ hai</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="lesson-card">
+            <h2>5. Thuộc tính rút gọn list-style</h2>
+            <ul class="shorthand-list">
+                <li>Type: disc làm dấu dự phòng</li>
+                <li>Position: inside</li>
+                <li>Image: dùng biểu tượng riêng</li>
+            </ul>
+        </section>
+
+        <section class="lesson-card">
+            <h2>6. Danh sách có màu sắc</h2>
+            <ul class="color-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section class="lesson-card roadmap-card">
+            <h2>Lộ trình học lập trình Web</h2>
+            <ol class="roadmap-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ol>
+        </section>
+    </main>
 </body>
 </html>

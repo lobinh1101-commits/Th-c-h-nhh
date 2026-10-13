@@ -1,0 +1,162 @@
+:root {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #233044;
+    background: #f3f6fb;
+    font-synthesis: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 36px 20px 56px;
+}
+
+main {
+    width: min(100%, 900px);
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 28px;
+    padding: 30px 32px;
+    border-radius: 14px;
+    background: #173b69;
+    color: #fff;
+}
+
+.page-header h1 {
+    margin: 4px 0 8px;
+    font-size: clamp(30px, 5vw, 42px);
+}
+
+.page-header p:last-child {
+    margin: 0;
+    color: #d9e7f8;
+}
+
+.eyebrow {
+    margin: 0;
+    color: #a9d5ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.lesson-card {
+    margin-bottom: 18px;
+    padding: 24px 28px;
+    border: 1px solid #e0e7f0;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgb(31 55 82 / 5%);
+}
+
+.lesson-card h2 {
+    margin: 0 0 14px;
+    color: #214f83;
+    font-size: 20px;
+}
+
+.lesson-card h3 {
+    margin: 0 0 8px;
+    color: #40536b;
+    font-size: 15px;
+}
+
+.lesson-card ul,
+.lesson-card ol {
+    margin: 0;
+    padding-left: 28px;
+}
+
+.lesson-card li {
+    margin: 7px 0;
+    line-height: 1.6;
+}
+
+.square-list {
+    list-style-type: square;
+}
+
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+.image-list {
+    list-style-image: url("list-marker.svg");
+}
+
+.position-demo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.position-demo > div {
+    min-width: 0;
+    padding: 16px;
+    border-radius: 8px;
+    background: #f6f8fb;
+}
+
+.outside-list {
+    list-style-position: outside;
+}
+
+.inside-list {
+    list-style-position: inside;
+}
+
+.shorthand-list {
+    list-style: disc inside url("list-marker.svg");
+    padding: 14px 18px !important;
+    border-radius: 8px;
+    background: #f1f7ff;
+}
+
+.color-list {
+    padding: 12px 20px 12px 42px !important;
+    border-radius: 8px;
+    background-color: #e8f3ff;
+    color: #174d7e;
+}
+
+.color-list li {
+    margin: 8px 0;
+}
+
+.roadmap-card {
+    border-color: #cfe2d5;
+    background: #f7fcf8;
+}
+
+.roadmap-list {
+    list-style: upper-roman outside;
+    padding: 14px 20px 14px 44px !important;
+    border-radius: 8px;
+    background-color: #e8f5ec;
+    color: #205c3a;
+}
+
+.roadmap-list li {
+    margin: 8px 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 18px 12px 36px;
+    }
+
+    .page-header,
+    .lesson-card {
+        padding: 21px;
+    }
+
+    .position-demo {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
