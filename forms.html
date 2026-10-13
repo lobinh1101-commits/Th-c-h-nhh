@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form thông tin và đăng ký học viên</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #1f2937;
+            background: #f3f6fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 36px 18px;
+        }
+
+        main {
+            width: min(100%, 760px);
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 0 0 28px;
+            color: #173b69;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 28px;
+            padding: 28px;
+            background: #fff;
+            border: 1px solid #dce4ef;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgb(26 54 93 / 7%);
+        }
+
+        h2 {
+            margin: 0 0 20px;
+            color: #24558c;
+        }
+
+        .field {
+            margin-bottom: 18px;
+        }
+
+        label,
+        legend {
+            font-weight: 600;
+        }
+
+        .field > label {
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1px solid #bdc9d8;
+            border-radius: 7px;
+            background: #fff;
+            color: inherit;
+            font: inherit;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #3478c7;
+            outline: 3px solid rgb(52 120 199 / 16%);
+        }
+
+        fieldset {
+            margin: 0 0 18px;
+            padding: 13px 15px 10px;
+            border: 1px solid #d5deea;
+            border-radius: 8px;
+        }
+
+        .choice {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            margin: 10px 18px 4px 0;
+            font-weight: 400;
+        }
+
+        .choice input {
+            accent-color: #2468ad;
+        }
+
+        textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 22px;
+        }
+
+        button {
+            padding: 11px 18px;
+            border: 0;
+            border-radius: 7px;
+            font: inherit;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .submit {
+            background: #2468ad;
+            color: #fff;
+        }
+
+        .reset {
+            background: #e8edf4;
+            color: #26384d;
+        }
+
+        button:hover {
+            filter: brightness(.95);
+        }
+
+        @media (max-width: 520px) {
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Biểu mẫu</h1>
+
+        <section>
+            <h2>Phần 1: Gửi thông tin</h2>
+            <form action="#" method="get">
+                <div class="field">
+                    <label for="yourname">Họ và tên</label>
+                    <input id="yourname" type="text" name="yourname" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" type="email" name="email" autocomplete="email" required>
+                </div>
+
+                <fieldset>
+                    <legend>Sở thích</legend>
+                    <label class="choice"><input type="checkbox" name="hobby" value="reading"> Đọc sách</label>
+                    <label class="choice"><input type="checkbox" name="hobby" value="music"> Âm nhạc</label>
+                    <label class="choice"><input type="checkbox" name="hobby" value="travel"> Du lịch</label>
+                    <label class="choice"><input type="checkbox" name="hobby" value="sports"> Thể thao</label>
+                </fieldset>
+
+                <div class="actions">
+                    <button class="submit" type="submit">Gửi thông tin</button>
+                    <button class="reset" type="reset">Nhập lại</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Phần 2: Đăng ký học viên</h2>
+            <form action="#" method="get">
+                <div class="field">
+                    <label for="fullname">Họ và tên</label>
+                    <input id="fullname" type="text" name="fullname" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="student-email">Email</label>
+                    <input id="student-email" type="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="phone">Số điện thoại</label>
+                    <input id="phone" type="tel" name="phone" autocomplete="tel">
+                </div>
+
+                <div class="field">
+                    <label for="birthday">Ngày sinh</label>
+                    <input id="birthday" type="date" name="birthday">
+                </div>
+
+                <fieldset>
+                    <legend>Giới tính</legend>
+                    <label class="choice"><input type="radio" name="gender" value="male"> Nam</label>
+                    <label class="choice"><input type="radio" name="gender" value="female"> Nữ</label>
+                    <label class="choice"><input type="radio" name="gender" value="other"> Khác</label>
+                </fieldset>
+
+                <div class="field">
+                    <label for="address">Địa chỉ</label>
+                    <textarea id="address" name="address" rows="2"></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="course">Khóa học</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Chọn khóa học --</option>
+                        <option value="html-css">HTML &amp; CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Hình thức học</legend>
+                    <label class="choice"><input type="radio" name="study_type" value="online"> Online</label>
+                    <label class="choice"><input type="radio" name="study_type" value="offline"> Offline</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sở thích</legend>
+                    <label class="choice"><input type="checkbox" name="hobby" value="reading"> Đọc sách</label>
+                    <label class="choice"><input type="checkbox" name="hobby" value="music"> Âm nhạc</label>
+                    <label class="choice"><input type="checkbox" name="hobby" value="travel"> Du lịch</label>
+                    <label class="choice"><input type="checkbox" name="hobby" value="sports"> Thể thao</label>
+                </fieldset>
+
+                <div class="field">
+                    <label for="note">Ghi chú</label>
+                    <textarea id="note" name="note" rows="3"></textarea>
+                </div>
+
+                <div class="actions">
+                    <button class="submit" type="submit">Đăng ký</button>
+                    <button class="reset" type="reset">Nhập lại</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
