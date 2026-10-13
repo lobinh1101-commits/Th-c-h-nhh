@@ -1,85 +1,90 @@
 
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    margin: 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.header {
-    background-color: #2196f3;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(65%);
 }
 
-.navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background-color: #333;
-    padding: 15px;
+.carousel-caption {
+    bottom: 25%;
 }
 
-.navigation a {
-    color: white;
-    text-decoration: none;
+.carousel-caption h2 {
+    font-size: 38px;
+    font-weight: bold;
 }
 
-.navigation a:hover {
-    color: #ffcc00;
-}
-
-.content {
-    display: flex;
-    gap: 10px;
-    align-items: stretch;
-}
-
-.main-content {
-    flex: 3;
-    min-width: 0;
-    padding: 20px;
-    background-color: white;
+.welcome-section {
     min-height: 250px;
 }
 
-.sidebar {
-    flex: 1;
-    min-width: 0;
-    padding: 20px;
-    background-color: #ddd;
+.service-icon {
+    font-size: 45px;
+    color: #0d6efd;
 }
 
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
+.card {
+    border: none;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-@media (max-width: 600px) {
-    .navigation {
-        flex-direction: column;
-        gap: 12px;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-form {
+    max-width: 650px;
+}
+
+footer a {
+    font-size: 22px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
     }
 
-    .content {
-        flex-direction: column;
+    .carousel-caption {
+        bottom: 10%;
     }
 
-    .main-content,
-    .sidebar {
-        width: 100%;
+    .carousel-caption h2 {
+        font-size: 23px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item img {
+        height: 230px;
+    }
+
+    .carousel-caption {
+        bottom: 5%;
+    }
+
+    .carousel-caption h2 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+        margin-bottom: 5px;
     }
 }
