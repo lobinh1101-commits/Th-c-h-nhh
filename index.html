@@ -1,19 +1,31 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<style>
-div {
-   margin: 25px;
-   padding: 35px;
-   width: 200px;
-   background-color: lightseagreen;
-   border: 20px dashed indianred;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-Content demo box<br/>
-</div>
+    <h1>Mô hình hộp CSS (Box Model)</h1>
+
+    <div class="card">
+        <h2>Thẻ 1</h2>
+        <p>Box-sizing: content-box</p>
+        <p>Thẻ sử dụng kích thước nội dung làm cơ sở.</p>
+    </div>
+
+    <div class="card">
+        <h2>Thẻ 2</h2>
+        <p>Box-sizing: border-box</p>
+        <p>Chiều rộng và chiều cao đã bao gồm padding và border.</p>
+    </div>
+
+    <div class="card">
+        <h2>Thẻ 3</h2>
+        <p>Box-sizing: border-box</p>
+        <p>Thẻ có nền màu đỏ để dễ dàng so sánh.</p>
+    </div>
 </body>
 </html>
