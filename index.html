@@ -3,38 +3,68 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách sản phẩm</title>
+    <title>Lịch họp công ty</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #555;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #e8eef5;
+        }
+    </style>
 </head>
 <body>
-    <h1>Danh sách sản phẩm</h1>
-    <table border="1">
+    <h1>Lịch họp công ty</h1>
+    <table>
         <thead>
             <tr>
-                <th>Tên sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
+                <th rowspan="2">Ngày</th>
+                <th colspan="2">Giờ</th>
+                <th rowspan="2">Nội dung cuộc họp</th>
+            </tr>
+            <tr>
+                <th>Bắt đầu</th>
+                <th>Kết thúc</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Bàn phím</td>
-                <td>450.000 VNĐ</td>
-                <td>12</td>
+                <td rowspan="3">Thứ Hai, 19/10/2026</td>
+                <td>09:00</td>
+                <td>10:00</td>
+                <td>Họp kế hoạch tuần</td>
             </tr>
             <tr>
-                <td>Chuột không dây</td>
-                <td>250.000 VNĐ</td>
-                <td>20</td>
+                <td>10:00</td>
+                <td>11:00</td>
+                <td>Họp nhóm dự án</td>
             </tr>
             <tr>
-                <td>Tai nghe</td>
-                <td>690.000 VNĐ</td>
-                <td>8</td>
+                <td colspan="2">14:00 - 16:00 (2 giờ)</td>
+                <td>Đào tạo nội bộ</td>
             </tr>
             <tr>
-                <td>Màn hình</td>
-                <td>3.500.000 VNĐ</td>
-                <td>5</td>
+                <td>Thứ Ba, 20/10/2026</td>
+                <td colspan="2">09:00 - 11:00 (2 giờ)</td>
+                <td>Họp toàn công ty</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Thứ Tư, 21/10/2026</td>
+                <td>09:00</td>
+                <td>10:00</td>
+                <td>Trao đổi với khách hàng</td>
+            </tr>
+            <tr>
+                <td colspan="2">13:00 - 15:00 (2 giờ)</td>
+                <td>Rà soát tiến độ dự án</td>
             </tr>
         </tbody>
     </table>
