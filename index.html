@@ -4,28 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Box Model</title>
+    <title>Menu Dropdown</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Mô hình hộp CSS (Box Model)</h1>
+    <h2>Menu Dropdown dọc</h2>
 
-    <div class="card">
-        <h2>Thẻ 1</h2>
-        <p>Box-sizing: content-box</p>
-        <p>Thẻ sử dụng kích thước nội dung làm cơ sở.</p>
-    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
 
-    <div class="card">
-        <h2>Thẻ 2</h2>
-        <p>Box-sizing: border-box</p>
-        <p>Chiều rộng và chiều cao đã bao gồm padding và border.</p>
-    </div>
+            <li>
+                <a href="#">Sản phẩm</a>
+                <ul>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Máy tính bảng</a></li>
+                </ul>
+            </li>
 
-    <div class="card">
-        <h2>Thẻ 3</h2>
-        <p>Box-sizing: border-box</p>
-        <p>Thẻ có nền màu đỏ để dễ dàng so sánh.</p>
+            <li>
+                <a href="#">Dịch vụ</a>
+                <ul>
+                    <li><a href="#">Sửa chữa</a></li>
+                    <li><a href="#">Bảo hành</a></li>
+                    <li><a href="#">Tư vấn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
     </div>
 </body>
 </html>
