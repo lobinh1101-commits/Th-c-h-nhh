@@ -1,6 +1,6 @@
 :root {
     font-family: "Segoe UI", Arial, sans-serif;
-    color: #233044;
+    color: #263445;
     background: #f3f6fb;
     font-synthesis: none;
 }
@@ -55,94 +55,64 @@ main {
 }
 
 .lesson-card h2 {
-    margin: 0 0 14px;
+    margin: 0 0 10px;
     color: #214f83;
     font-size: 20px;
 }
 
-.lesson-card h3 {
-    margin: 0 0 8px;
-    color: #40536b;
-    font-size: 15px;
-}
-
-.lesson-card ul,
-.lesson-card ol {
-    margin: 0;
-    padding-left: 28px;
-}
-
-.lesson-card li {
-    margin: 7px 0;
+.lesson-card p {
+    margin: 0 0 16px;
+    color: #526276;
     line-height: 1.6;
 }
 
-.square-list {
-    list-style-type: square;
+.table-scroll {
+    overflow-x: auto;
 }
 
-.roman-list {
-    list-style-type: upper-roman;
+table {
+    width: 100%;
 }
 
-.image-list {
-    list-style-image: url("list-marker.svg");
+.separate-table {
+    border: 1px solid #222;
+    border-spacing: 3px;
 }
 
-.position-demo {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
+.separate-table th,
+.separate-table td {
+    border: 1px solid #222;
+    padding: 10px 14px;
+    text-align: left;
 }
 
-.position-demo > div {
-    min-width: 0;
-    padding: 16px;
-    border-radius: 8px;
-    background: #f6f8fb;
+.styled-table {
+    border-collapse: collapse;
+    border: 1px solid #333;
 }
 
-.outside-list {
-    list-style-position: outside;
+.styled-table th,
+.styled-table td {
+    border: 1px solid #333;
+    padding: 15px;
 }
 
-.inside-list {
-    list-style-position: inside;
+.styled-table th {
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
 }
 
-.shorthand-list {
-    list-style: disc inside url("list-marker.svg");
-    padding: 14px 18px !important;
-    border-radius: 8px;
-    background: #f1f7ff;
+.styled-table td {
+    height: 80px;
+    background-color: #f2f2f2;
+    color: #333;
+    vertical-align: bottom;
 }
 
-.color-list {
-    padding: 12px 20px 12px 42px !important;
-    border-radius: 8px;
-    background-color: #e8f3ff;
-    color: #174d7e;
-}
-
-.color-list li {
-    margin: 8px 0;
-}
-
-.roadmap-card {
-    border-color: #cfe2d5;
-    background: #f7fcf8;
-}
-
-.roadmap-list {
-    list-style: upper-roman outside;
-    padding: 14px 20px 14px 44px !important;
-    border-radius: 8px;
-    background-color: #e8f5ec;
-    color: #205c3a;
-}
-
-.roadmap-list li {
-    margin: 8px 0;
+.styled-table tbody tr:nth-child(even) td {
+    background-color: #e7edf4;
 }
 
 @media (max-width: 600px) {
@@ -153,10 +123,5 @@ main {
     .page-header,
     .lesson-card {
         padding: 21px;
-    }
-
-    .position-demo {
-        grid-template-columns: 1fr;
-        gap: 14px;
     }
 }
