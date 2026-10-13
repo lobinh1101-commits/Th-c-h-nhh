@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký người dùng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 32px 16px;
+            display: grid;
+            place-items: center;
+            background: #f2f5f9;
+            color: #263445;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .registration-card {
+            width: min(100%, 460px);
+            padding: 32px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 28px rgb(28 48 74 / 12%);
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            color: #214f83;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .intro {
+            margin: 0 0 24px;
+            color: #66758a;
+            text-align: center;
+        }
+
+        .field {
+            margin-bottom: 18px;
+        }
+
+        .field > label,
+        legend {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            color: inherit;
+            font: inherit;
+        }
+
+        input:focus {
+            border-color: #3578bd;
+            outline: 3px solid rgb(53 120 189 / 16%);
+        }
+
+        fieldset {
+            margin: 0 0 22px;
+            padding: 12px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+        }
+
+        .gender-option {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            margin: 4px 18px 0 0;
+        }
+
+        .gender-option input {
+            accent-color: #2468ad;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: 0;
+            border-radius: 6px;
+            background: #2468ad;
+            color: #fff;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1c548e;
+        }
+    </style>
+</head>
+<body>
+    <main class="registration-card">
+        <h1>Đăng ký người dùng</h1>
+        <p class="intro">Vui lòng điền thông tin bên dưới.</p>
+
+        <form action="http://demo.codegym.vn/6/registration_form/register.php" method="POST">
+            <div class="field">
+                <label for="name">Họ và tên</label>
+                <input id="name" type="text" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+                <label for="phone">Số điện thoại</label>
+                <input id="phone" type="tel" name="phone" autocomplete="tel" required>
+            </div>
+
+            <fieldset>
+                <legend>Giới tính</legend>
+                <label class="gender-option">
+                    <input type="radio" name="gender" value="Nam" required>
+                    Nam
+                </label>
+                <label class="gender-option">
+                    <input type="radio" name="gender" value="Nữ">
+                    Nữ
+                </label>
+            </fieldset>
+
+            <button type="submit">Gửi thông tin</button>
+        </form>
+    </main>
+</body>
+</html>
